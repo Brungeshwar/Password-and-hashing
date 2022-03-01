@@ -1,0 +1,28 @@
+GET http://localhost:3002/todos/?search_q=Watch%20Movie
+
+
+###'
+
+GET http://localhost:3002/todos/2/
+
+
+###
+POST http://localhost:3002/todos/
+Content-Type: application/json
+
+{
+  "id": 10,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
+###
+PUT http://localhost:3002/todos/1/
+Content-Type: application/json
+
+{
+  "status": "DHON"
+}
+###
+
+DELETE http://localhost:3002/todos/2/
